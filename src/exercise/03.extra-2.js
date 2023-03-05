@@ -65,7 +65,7 @@ function PokemonInfo({pokemonName}) {
         }),
       )
     }
-  }, [cache, pokemonName, run, setData])
+  }, [cache, dispatch, pokemonName, run, setData])
 
   if (status === 'idle') {
     return 'Submit a pokemon'
